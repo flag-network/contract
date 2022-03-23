@@ -1,7 +1,5 @@
 // SPDX-License-Identifier: unlicensed
 pragma solidity ^0.8.2;
-
-
 library SafeMath {
     /**
      * @dev Returns the addition of two unsigned integers, reverting on
@@ -427,4 +425,5 @@ contract Token is IBEP20, Auth {
         assembly { size := extcodesize(addr) }
         return size > 0;
     }
+    //
 }
